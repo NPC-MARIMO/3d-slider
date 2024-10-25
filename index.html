@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1">
+                <img src="https://i.pinimg.com/474x/a8/53/d7/a853d7b31f181c40b3e75762e629b95b.jpg" alt="">
+            </div>
+            <div class="item" style="--position: 2">
+                <img src="https://i.pinimg.com/474x/2b/72/6d/2b726d3a427a6b7a5d469b1e957621c2.jpg" alt="">
+            </div>
+            <div class="item" style="--position: 3">
+                <img src="https://i.pinimg.com/736x/ad/af/0c/adaf0cd484b9330a48185a13bde4bc4b.jpg" alt="">
+            </div>
+            <div class="item" style="--position: 4">
+                <img src="https://i.pinimg.com/236x/b4/dd/7f/b4dd7f06d79c46c52bdce1b1f18de019.jpg" alt="">
+            </div>
+            <div class="item" style="--position: 5">
+                <img src="https://i.pinimg.com/236x/71/c3/50/71c350f1204e6221a2e45b6c0fb2cb68.jpg" alt="">
+            </div>
+            <div class="item" style="--position: 6">
+                <img src="https://i.pinimg.com/236x/76/67/3c/76673cc7b62a40d875b64f56eb9d4b97.jpg" alt="">
+            </div>
+            <div class="item" style="--position: 7">
+                <img src="https://i.pinimg.com/236x/a4/c9/da/a4c9da2fe2103fd145a36fc7e9730640.jpg" alt="">
+            </div>
+            <div class="item" style="--position: 8">
+                <img src="https://i.pinimg.com/236x/40/f2/6f/40f26f554c3912295f02b9e6f11fcdbe.jpg" alt="">
+            </div>
+            <div class="item" style="--position: 9">
+                <img src="https://i.pinimg.com/236x/d8/f6/7c/d8f67c7cd6b4d761f7f0823d2c1d64c4.jpg" alt="">
+            </div>
+            <div class="item" style="--position: 10">
+                <img src="https://i.pinimg.com/564x/66/f8/39/66f83996590b96cce8d3943b554ac420.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <h1>
+                EVOLVE
+            </h1>
+            <div class="author">
+                <h2>Mosshead</h2>
+                <p><b>Web Design</b></p>
+                <p>
+                    Front-end God<br> HTML , CSS , JS <br> REACT.JS
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html> 
